@@ -56,7 +56,7 @@ const projects = [
 
 const ProjectList = () => {
   return (
-    <div id="projects" className="container mx-auto px-6 py-20 max-w-7xl">
+    <div id="projects" className="container mx-auto px-6  max-w-7xl">
       <div className="space-y-14 flex flex-col items-center">
         {projects.map((project, index) => (
           <div
