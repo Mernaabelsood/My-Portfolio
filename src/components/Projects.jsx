@@ -2,6 +2,9 @@
 import React from "react";
 import image1 from "../assests/images/image1.png";
 import image2 from "../assests/images/image2.png";
+import image3 from "../assests/images/image3.png";
+import image4 from "../assests/images/image4.png";
+import image5 from "../assests/images/image5.png";
 
 const projects = [
   {
@@ -29,17 +32,26 @@ const projects = [
     techStack: "Redux, React Router, Material UI ",
     liveDemo: "https://social-media-app-beta-smoky.vercel.app/",
     github: "https://github.com/Mernaabelsood/social-media-app",
-    image: image2,
+    image: image3,
   },
   {
-    name: "Pizza Store",
+    name: "Games-Review Website",
     description:
-      "A Responsive React App Has Features Including A Menu, Cart, User Orders, And Dashboard.",
-    techStack: "Redux, React Router, Tailwind CSS",
-    liveDemo: "https://pizza-store-eight.vercel.app/",
-    github: "https://github.com/Mernaabelsood/pizza-store",
-    image: image2,
+      "A website for game reviews with fetching data.",
+    techStack: "HTML, CSS, Bootstrap, JavaScript, APIs",
+    liveDemo: "https://game-review-website.vercel.app/",
+    github: "https://github.com/Mernaabelsood/Game-Website",
+    image: image4,
   },
+  {
+    name: "Resturant Landing Page",
+    description:
+      "A landing page for a restaurant.",
+    techStack: "HTML, CSS",
+    liveDemo: "https://mernaabelsood.github.io/Mealify/",
+    github: "https://github.com/Mernaabelsood/Mealify",
+    image: image5,
+  }
 ];
 
 const ProjectList = () => {
