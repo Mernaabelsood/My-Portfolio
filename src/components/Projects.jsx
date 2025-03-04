@@ -75,7 +75,9 @@ const ProjectList = () => {
             </div>
 
             {/* Project Details */}
-            <div className="p-8 bg-from-pink-100 text-center rounded-b-2xl animate-slide-up">
+            {/* <div className="p-8 bg-from-pink-100 text-center rounded-b-2xl animate-slide-up"> */}
+            <div className="p-8 bg-[#D9EAFD] text-center rounded-b-2xl animate-slide-up">
+
               <h3 className="text-3xl font-semibold text-gray-900 mb-2">
                 {project.name}
               </h3>
@@ -88,7 +90,9 @@ const ProjectList = () => {
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-pink-500 text-white px-10 py-3 rounded-lg shadow-lg hover:bg-pink-600 transition-transform transform hover:scale-110"
+                  // className="bg-pink-500 text-white px-10 py-3 rounded-lg shadow-lg hover:bg-pink-600 transition-transform transform hover:scale-110"
+                  className="bg-[#9AA6B2] text-white px-10 py-3 rounded-lg shadow-lg hover:bg-[#7B8793] transition-transform transform hover:scale-110"
+
                 >
                   Live Demo
                 </a>
@@ -96,7 +100,8 @@ const ProjectList = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-900 text-white px-10 py-3 rounded-lg shadow-lg hover:bg-gray-800 transition-transform transform hover:scale-110"
+                  className="bg-[#5F6A75] text-white px-10 py-3 rounded-lg shadow-lg hover:bg-[#3E4A56] transition-transform transform hover:scale-110"
+
                 >
                   GitHub Repo
                 </a>
