@@ -5,6 +5,7 @@ import image2 from "../assests/images/image2.png";
 import image3 from "../assests/images/image3.png";
 import image4 from "../assests/images/image4.png";
 import image5 from "../assests/images/image5.png";
+import image6 from "../assests/images/image6.png";
 
 const projects = [
   {
@@ -43,6 +44,16 @@ const projects = [
     github: "https://github.com/Mernaabelsood/Game-Website",
     image: image4,
   },
+  {
+    name: "Weather App",
+    description:
+      "simple website that gives users the ability to check the weather of three consecutive days in any place in the world.",
+    techStack: "HTML, CSS, Bootstrap, JavaScript",
+    liveDemo: "https://weatherapp-weld-nine.vercel.app/",
+    github: "https://github.com/Mernaabelsood/Weather-APP",
+    image: image6,
+  },
+
   {
     name: "Resturant Landing Page",
     description:
