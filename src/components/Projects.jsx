@@ -20,7 +20,7 @@ const projects = [
     name: "Pizza Store",
     description:
       "A Responsive React App Has Features Including A Menu, Cart, User Orders, And Dashboard.",
-    techStack: "Redux, React Router, Tailwind CSS",
+    techStack: "Redux Toolkit, React Router, Tailwind CSS",
     liveDemo: "https://pizza-store-eight.vercel.app/",
     github: "https://github.com/Mernaabelsood/pizza-store",
     image: image2,
@@ -29,7 +29,7 @@ const projects = [
     name: " Social Media App",
     description:
       "A responsive React app includes features like a night mode option and updating profile.",
-    techStack: "Redux, React Router, Material UI ",
+    techStack: "Redux Toolkit, React Router, Material UI ",
     liveDemo: "https://social-media-app-beta-smoky.vercel.app/",
     github: "https://github.com/Mernaabelsood/social-media-app",
     image: image3,
