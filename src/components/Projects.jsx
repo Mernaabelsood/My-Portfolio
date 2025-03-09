@@ -6,8 +6,18 @@ import image3 from "../assests/images/image3.png";
 import image4 from "../assests/images/image4.png";
 import image5 from "../assests/images/image5.png";
 import image6 from "../assests/images/image6.png";
+import image7 from "../assests/images/image7.png";
 
 const projects = [
+  {
+    name: "Wild Oasis Application",
+    description:
+      "A modern React cabins booking web app featuring authentication, real-time data fetching, sorting, filtering, dark mode, dashboard and many features.",
+    techStack: "React Router, React Query, Styled Components",
+    liveDemo: "https://the-wild-oasis-lovat-eight.vercel.app/",
+    github: "https://github.com/Mernaabelsood/The-Wild-Oasis",
+    image: image7, 
+  },
   {
     name: "E-commerce Application",
     description:
