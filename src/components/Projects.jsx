@@ -9,15 +9,7 @@ import image6 from "../assests/images/image6.png";
 import image7 from "../assests/images/image7.png";
 
 const projects = [
-  {
-    name: "Wild Oasis Application",
-    description:
-      "A modern React cabins booking web app featuring authentication, real-time data fetching, sorting, filtering, dark mode, dashboard and many features.",
-    techStack: "React Router, React Query, Styled Components",
-    liveDemo: "https://the-wild-oasis-lovat-eight.vercel.app/",
-    github: "https://github.com/Mernaabelsood/The-Wild-Oasis",
-    image: image7, 
-  },
+
   {
     name: "E-commerce Application",
     description:
@@ -44,6 +36,15 @@ const projects = [
     liveDemo: "https://social-media-app-beta-smoky.vercel.app/",
     github: "https://github.com/Mernaabelsood/social-media-app",
     image: image3,
+  },
+  {
+    name: "Wild Oasis Application",
+    description:
+      "A modern React cabins booking web app featuring real-time data fetching, sorting, filtering, dark mode, and many features.",
+    techStack: "React Router, React Query, Styled Components",
+    liveDemo: "https://the-wild-oasis-lovat-eight.vercel.app/",
+    github: "https://github.com/Mernaabelsood/The-Wild-Oasis",
+    image: image7, 
   },
   {
     name: "Games-Review Website",
