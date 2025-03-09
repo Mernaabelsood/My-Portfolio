@@ -40,7 +40,7 @@ const projects = [
   {
     name: "Wild Oasis Application",
     description:
-      "A modern React cabins booking web app featuring real-time data fetching, sorting, filtering, dark mode, pagination and many features.",
+      "A modern React cabin booking web app featuring real-time data fetching, sorting, filtering, dark mode, pagination and many features.",
     techStack: "React Router, React Query, Styled Components",
     liveDemo: "https://the-wild-oasis-lovat-eight.vercel.app/",
     github: "https://github.com/Mernaabelsood/The-Wild-Oasis",
