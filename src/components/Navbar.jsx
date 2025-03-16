@@ -31,7 +31,7 @@ const Navbar = () => {
           Merna Abou Elsood
         </h1>
 
-        {/* Hamburger Menu Button */}
+        {/*  Menu Button */}
         <button
           className="md:hidden focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
