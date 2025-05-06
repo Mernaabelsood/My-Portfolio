@@ -138,14 +138,16 @@ const Projects = () => {
                 >
                   Live Demo
                 </a>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#5F6A75] dark:bg-gray-900 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-[#3E4A56] dark:hover:bg-gray-800 transition-transform transform hover:scale-110 font-semibold"
-                >
-                  GitHub Repo
-                </a>
+                {project.name !== "Sports Website" && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#5F6A75] dark:bg-gray-900 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-[#3E4A56] dark:hover:bg-gray-800 transition-transform transform hover:scale-110 font-semibold"
+                  >
+                    GitHub Repo
+                  </a>
+                )}
               </div>
             </div>
           </motion.div>
