@@ -7,6 +7,7 @@ import image5 from "../assests/images/image5.png";
 import image6 from "../assests/images/image6.png";
 import image7 from "../assests/images/image7.png";
 import image8 from "../assests/images/image8.png";
+import image9 from "../assests/images/image9.png";
 import { motion } from "framer-motion";
 
 const projects = [
@@ -55,6 +56,15 @@ const projects = [
     liveDemo: "https://the-wild-oasis-lovat-eight.vercel.app/",
     github: "https://github.com/Mernaabelsood/The-Wild-Oasis",
     image: image7,
+  },
+  {
+    name: "Sports Website",
+    description:
+      "A modern React sports  web app featuring charts dashboard and analytics.",
+    techStack: "React, Chart.js, Tailwind CSS, Context API",
+    liveDemo: "https://sports-app-ebon.vercel.app/",
+
+    image: image9,
   },
   {
     name: "Games-Review Website",
