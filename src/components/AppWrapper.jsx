@@ -4,8 +4,15 @@
 //   </div>
 // );
 
-const AppWrapper = ({ children }) => (
-  <div className="bg-gradient-to-r from-[#F8FAFC] to-[#D9EAFD] min-h-screen w-full ">
+const AppWrapper = ({ children, theme }) => (
+  <div
+    className={
+      `min-h-screen w-full transition-colors duration-500 ` +
+      (theme === "dark"
+        ? "bg-gradient-to-r from-gray-900 to-gray-800"
+        : "bg-gradient-to-r from-[#F8FAFC] to-[#D9EAFD]")
+    }
+  >
     {children}
   </div>
 );
