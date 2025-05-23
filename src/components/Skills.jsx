@@ -35,6 +35,8 @@ const skillList = [
   "Rest API",
   "Express",
   "Agile Methods",
+  "Jest",
+  "Testing Library",
 ];
 
 const Skills = () => (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import image1 from "../assests/images/image1.png";
 import image2 from "../assests/images/image2.png";
 import image3 from "../assests/images/image3.png";
@@ -8,6 +8,8 @@ import image6 from "../assests/images/image6.png";
 import image7 from "../assests/images/image7.png";
 import image8 from "../assests/images/image8.png";
 import image9 from "../assests/images/image9.png";
+import image10 from "../assests/images/image10.png";
+import image11 from "../assests/images/image11.png";
 import { motion } from "framer-motion";
 
 const projects = [
@@ -24,8 +26,9 @@ const projects = [
   {
     name: "Pizza Store",
     description:
-      "A Responsive React App Has Features Including A Menu, Cart, User Orders, And Dashboard.",
-    techStack: "Redux Toolkit, React Router, Tailwind CSS",
+      "React app with features including a menu, cart, user orders, and dashboard, supporting English/Arabic with RTL/LTR toggle and unit testing.",
+    techStack:
+      "Redux Toolkit, React Router, Tailwind CSS, Jest, Testing Library, Cypress",
     liveDemo: "https://pizza-store-eight.vercel.app/",
     github: "https://github.com/Mernaabelsood/pizza-store",
     image: image2,
@@ -63,8 +66,23 @@ const projects = [
       "A modern React sports  web app featuring charts dashboard and analytics.",
     techStack: "React, Chart.js, Tailwind CSS, Context API",
     liveDemo: "https://sports-app-ebon.vercel.app/",
-
     image: image9,
+  },
+  {
+    name: "AIO System",
+    description:
+      "A modern web application platform for business process automation and management. Features dashboards, analytics, and secure user access.",
+    techStack: "Tech stack: Next.Js, Tailwind CSS, Antd, SWR, Redux Toolkit",
+    liveDemo: "https://aio.achievo.app/",
+    image: image11,
+  },
+  {
+    name: "AIO Security System (In Progress)",
+    description:
+      "A secure digital hub for managing and monitoring security operations. Includes real-time analytics and user management.",
+    techStack: "Tech stack: Next.Js, Tailwind CSS, Antd, SWR, Redux Toolkit",
+    liveDemo: "https://aio-security.digitalhub.com.eg/",
+    image: image10,
   },
   {
     name: "Games-Review Website",
@@ -94,11 +112,58 @@ const projects = [
   },
 ];
 
+const tabOptions = [
+  { label: "All", value: "all" },
+  { label: "Personal Projects", value: "personal" },
+  { label: "Work Projects", value: "work" },
+];
+
 const Projects = () => {
+  const [selectedTab, setSelectedTab] = useState("all");
+
+  let filteredProjects = projects;
+  if (selectedTab === "personal") {
+    filteredProjects = projects.filter(
+      (project) =>
+        project.name !== "Sports Website" &&
+        project.name !== "AIO System" &&
+        project.name !== "AIO Security System (In Progress)"
+    );
+  } else if (selectedTab === "work") {
+    filteredProjects = projects.filter(
+      (project) =>
+        project.name === "Sports Website" ||
+        project.name === "AIO System" ||
+        project.name === "AIO Security System (In Progress)"
+    );
+  }
+
   return (
     <div id="projects" className="container mx-auto px-6 max-w-7xl">
+      {/* Tabs */}
+      <div className="flex justify-center mb-10">
+        <div className="inline-flex rounded-xl shadow-md bg-[#D9EAFD] dark:bg-gray-800">
+          {tabOptions.map((tab) => (
+            <button
+              key={tab.value}
+              onClick={() => setSelectedTab(tab.value)}
+              className={`px-6 py-2 font-semibold rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-600
+                ${
+                  selectedTab === tab.value
+                    ? "bg-[#9AA6B2] dark:bg-gray-700 text-white"
+                    : "bg-transparent text-gray-800 dark:text-gray-200 hover:bg-[#BCCCDC] dark:hover:bg-gray-700"
+                }
+              `}
+              aria-current={selectedTab === tab.value ? "page" : undefined}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+      {/* Projects List */}
       <div className="space-y-14 flex flex-col items-center">
-        {projects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <motion.div
             key={index}
             className="relative w-full max-w-4xl rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-gradient-to-br from-[#D9EAFD] to-[#BCCCDC] dark:from-gray-800 dark:to-gray-900 transition-colors duration-500 hover:scale-105 hover:shadow-2xl"
@@ -138,16 +203,18 @@ const Projects = () => {
                 >
                   Live Demo
                 </a>
-                {project.name !== "Sports Website" && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#5F6A75] dark:bg-gray-900 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-[#3E4A56] dark:hover:bg-gray-800 transition-transform transform hover:scale-110 font-semibold"
-                  >
-                    GitHub Repo
-                  </a>
-                )}
+                {project.name !== "Sports Website" &&
+                  project.name !== "AIO System" &&
+                  project.name !== "AIO Security System (In Progress)" && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-[#5F6A75] dark:bg-gray-900 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-[#3E4A56] dark:hover:bg-gray-800 transition-transform transform hover:scale-110 font-semibold"
+                    >
+                      GitHub Repo
+                    </a>
+                  )}
               </div>
             </div>
           </motion.div>
