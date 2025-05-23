@@ -10,6 +10,7 @@ import image8 from "../assests/images/image8.png";
 import image9 from "../assests/images/image9.png";
 import image10 from "../assests/images/image10.png";
 import image11 from "../assests/images/image11.png";
+import image12 from "../assests/images/image12.png";
 import { motion } from "framer-motion";
 
 const projects = [
@@ -85,6 +86,13 @@ const projects = [
     image: image10,
   },
   {
+    name: "SmartCharts Landing",
+    description: "A responsive landing page of charts, calendar, sidebar",
+    techStack: "TypeScript, Tailwind CSS, SASS",
+    liveDemo: "https://landing-page-task-peach.vercel.app/",
+    image: image12,
+  },
+  {
     name: "Games-Review Website",
     description: "A website for game reviews with fetching data.",
     techStack: "HTML, CSS, Bootstrap, JavaScript, APIs",
@@ -127,14 +135,16 @@ const Projects = () => {
       (project) =>
         project.name !== "Sports Website" &&
         project.name !== "AIO System" &&
-        project.name !== "AIO Security System (In Progress)"
+        project.name !== "AIO Security System (In Progress)" &&
+        project.name !== "SmartCharts Landing"
     );
   } else if (selectedTab === "work") {
     filteredProjects = projects.filter(
       (project) =>
         project.name === "Sports Website" ||
         project.name === "AIO System" ||
-        project.name === "AIO Security System (In Progress)"
+        project.name === "AIO Security System (In Progress)" ||
+        project.name === "SmartCharts Landing"
     );
   }
 
@@ -205,7 +215,8 @@ const Projects = () => {
                 </a>
                 {project.name !== "Sports Website" &&
                   project.name !== "AIO System" &&
-                  project.name !== "AIO Security System (In Progress)" && (
+                  project.name !== "AIO Security System (In Progress)" &&
+                  project.name !== "SmartCharts Landing" && (
                     <a
                       href={project.github}
                       target="_blank"
