@@ -11,9 +11,19 @@ import image9 from "../assests/images/image9.png";
 import image10 from "../assests/images/image10.png";
 import image11 from "../assests/images/image11.png";
 import image12 from "../assests/images/image12.png";
+import image13 from "../assests/images/image13.png";
+import image14 from "../assests/images/image14.png";
 import { motion } from "framer-motion";
 
 const projects = [
+  {
+    name: "EduNas",
+    description:
+      "A comprehensive admin panel for an educational platform. Features dual-system architecture supporting both organizations and instructors, complete with courses management, community features, user profiles, dashboards, financial management, and integrated payment gateway.",
+    techStack: "React, Tailwind CSS, Antd, SWR, Redux Toolkit",
+    liveDemo: "https://edunas.digitalhub.com.eg/",
+    image: image13,
+  },
   {
     name: "Wild Oasis Website",
     description:
@@ -42,6 +52,15 @@ const projects = [
     liveDemo: "https://e-commerce-project-sepia-alpha.vercel.app/",
     github: "https://github.com/Mernaabelsood/E-commerce-project",
     image: image1,
+  },
+  {
+    name: "Educational Platform",
+    description:
+      "A comprehensive UI implementation of an educational platform admin panel with multiple pages, featuring modern design patterns and responsive layouts.",
+    techStack: "React, Tailwind CSS, Antd",
+    liveDemo: "https://test-project-ui-sand.vercel.app/",
+    github: "https://github.com/Mernaabelsood/test-project-ui",
+    image: image14,
   },
   {
     name: " Social Media App",
@@ -73,15 +92,15 @@ const projects = [
     name: "AIO System",
     description:
       "A modern web application platform for business process automation and management. Features dashboards, analytics, and secure user access.",
-    techStack: "Tech stack: Next.Js, Tailwind CSS, Antd, SWR, Redux Toolkit",
+    techStack: "React, Tailwind CSS, Antd, SWR, Redux Toolkit",
     liveDemo: "https://aio.achievo.app/",
     image: image11,
   },
   {
-    name: "AIO Security System (In Progress)",
+    name: "AIO Security System",
     description:
       "A secure digital hub for managing and monitoring security operations. Includes real-time analytics and user management.",
-    techStack: "Tech stack: Next.Js, Tailwind CSS, Antd, SWR, Redux Toolkit",
+    techStack: "Next.Js, Tailwind CSS, Antd, SWR, Redux Toolkit",
     liveDemo: "https://aio-security.digitalhub.com.eg/",
     image: image10,
   },
@@ -135,16 +154,18 @@ const Projects = () => {
       (project) =>
         project.name !== "Sports Website" &&
         project.name !== "AIO System" &&
-        project.name !== "AIO Security System (In Progress)" &&
-        project.name !== "SmartCharts Landing"
+        project.name !== "AIO Security System" &&
+        project.name !== "SmartCharts Landing" &&
+        project.name !== "EduNas"
     );
   } else if (selectedTab === "work") {
     filteredProjects = projects.filter(
       (project) =>
         project.name === "Sports Website" ||
         project.name === "AIO System" ||
-        project.name === "AIO Security System (In Progress)" ||
-        project.name === "SmartCharts Landing"
+        project.name === "AIO Security System" ||
+        project.name === "SmartCharts Landing" ||
+        project.name === "EduNas"
     );
   }
 
@@ -215,8 +236,10 @@ const Projects = () => {
                 </a>
                 {project.name !== "Sports Website" &&
                   project.name !== "AIO System" &&
-                  project.name !== "AIO Security System (In Progress)" &&
-                  project.name !== "SmartCharts Landing" && (
+                  project.name !== "AIO Security System" &&
+                  project.name !== "SmartCharts Landing" &&
+                  project.name !== "EduNas" &&
+                  project.name !== "Educational Platform" && (
                     <a
                       href={project.github}
                       target="_blank"
