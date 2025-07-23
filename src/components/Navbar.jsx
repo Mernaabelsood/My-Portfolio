@@ -56,6 +56,17 @@ const Navbar = ({ theme, toggleTheme }) => {
             >
               Show CV
             </motion.button>
+            <motion.a
+              href="https://github.com/Mernaabelsood"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="ml-2 px-4 py-2 rounded font-semibold shadow transition bg-gradient-to-r from-[#BCCCDC] to-[#9AA6B2] dark:from-gray-800 dark:to-gray-700 text-[#5F6A75] dark:text-gray-100 border border-[#9AA6B2] dark:border-gray-700 flex items-center"
+            >
+              <span className="mr-1">🐙</span>
+              GitHub
+            </motion.a>
             <button
               onClick={toggleTheme}
               className="ml-2 px-3 py-2 rounded shadow transition bg-gradient-to-r from-[#BCCCDC] to-[#9AA6B2] dark:from-gray-800 dark:to-gray-700 text-[#5F6A75] dark:text-gray-100 border border-[#9AA6B2] dark:border-gray-700"
@@ -104,10 +115,21 @@ const Navbar = ({ theme, toggleTheme }) => {
               }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="block w-full text-center py-2 text-lg rounded shadow transition bg-gradient-to-r from-[#BCCCDC] to-[#9AA6B2] dark:from-gray-800 dark:to-gray-700 text-[#5F6A75] dark:text-gray-100 border border-[#9AA6B2] dark:border-gray-700"
+              className="px-4 py-2 rounded shadow transition bg-gradient-to-r from-[#BCCCDC] to-[#9AA6B2] dark:from-gray-800 dark:to-gray-700 text-[#5F6A75] dark:text-gray-100 border border-[#9AA6B2] dark:border-gray-700"
             >
               Show CV
             </motion.button>
+            <motion.a
+              href="https://github.com/Mernaabelsood"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-4 py-2 rounded shadow transition bg-gradient-to-r from-[#BCCCDC] to-[#9AA6B2] dark:from-gray-800 dark:to-gray-700 text-[#5F6A75] dark:text-gray-100 border border-[#9AA6B2] dark:border-gray-700 flex items-center"
+            >
+              <span className="mr-1">🐙</span>
+              GitHub
+            </motion.a>
             <button
               onClick={toggleTheme}
               className="mt-2 px-3 py-2 rounded shadow transition bg-gradient-to-r from-[#BCCCDC] to-[#9AA6B2] dark:from-gray-800 dark:to-gray-700 text-[#5F6A75] dark:text-gray-100 border border-[#9AA6B2] dark:border-gray-700"
